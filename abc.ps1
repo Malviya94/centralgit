@@ -1,4 +1,4 @@
 param($P, $Q, $f)
-echo $P
+echo $env:P
 write-output $Q
 echo $f
