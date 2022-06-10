@@ -1,2 +1,3 @@
-param($P)
+param($P, $Q)
 echo $P
+write-output $Q
