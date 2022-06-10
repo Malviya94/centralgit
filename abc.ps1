@@ -1,0 +1,2 @@
+param($P)
+echo $P
