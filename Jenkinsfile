@@ -12,7 +12,7 @@ pipeline {
                     if (env.GIT_BRANCH=='origin/master') {
                         echo 'hello'
                         bat"""
-                        powershell.exe -file abc.ps1 -P ${env:BUILD_NUMBER} -Q $a
+                        powershell.exe -file abc.ps1 -P ${env:BUILD_NUMBER} -Q $a -f abc
                         """
                     }
                 }
