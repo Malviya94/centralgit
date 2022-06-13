@@ -14,7 +14,7 @@ pipeline {
                 echo 'Hello World'
                 script {
                     echo env.GIT_BRANCH
-                    if (env.GIT_BRANCH=='origin/master' || env.GIT_BRANCH=='origin/Dev')
+                     if (env.GIT_BRANCH=='origin/master' || env.GIT_BRANCH=='origin/Dev') {
                         echo 'hello'
                         bat"powershell.exe -file abc.ps1 -P mkdir -Q $a"
                     }
