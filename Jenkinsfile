@@ -14,7 +14,10 @@ pipeline {
                         bat"powershell.exe -file abc.ps1 -P mkdir -Q $a"
                     }
                 }
-              } 
+              }
+            steps('test') {
+                input('Do you want to proceed?')
+            }
             }
         }
     }
