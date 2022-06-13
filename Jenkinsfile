@@ -1,6 +1,6 @@
 pipeline {
      agent {
-                node { label 'Build-In Node'}
+                node { label 'Build'}
             }
     environment {
         a='abc'    
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Hello') {
             agent {
-                node { label 'Build-In Node'}
+                node { label 'Build'}
             }
             steps {
                 echo 'Hello World'
