@@ -15,7 +15,7 @@ pipeline {
                     }
                 }
               }
-            steps('test') {
+            stage('test') {
                 input('Do you want to proceed?')
             }
             }
