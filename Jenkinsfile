@@ -19,7 +19,7 @@ pipeline {
             stage('test') {
                 steps {
                 input('Do you want to proceed?')
-                    catcherror(buildResult: 'ABORTED', stageResult: 'FAILURE') {
+                    catcherror(buildResult: 'ABORT', stageResult: 'FAILURE') {
                         sh "exit 0"
                     }
                 }
