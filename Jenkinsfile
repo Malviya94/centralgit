@@ -1,5 +1,7 @@
 pipeline {
-    //agent any
+     agent {
+                node { label 'Build-In Node'}
+            }
     environment {
         a='abc'    
     }
