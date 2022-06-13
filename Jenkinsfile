@@ -20,7 +20,7 @@ pipeline {
                 steps {
                 input('Do you want to proceed?')
                     catcherror(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                        sh "exit 1"
+                        sh "exit 0"
                     }
                 }
             }
