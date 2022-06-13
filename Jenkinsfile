@@ -15,9 +15,10 @@ pipeline {
                     }
                 }
               }
+        }
             stage('test') {
                 input('Do you want to proceed?')
             }
-            }
+            
         }
     }
