@@ -1,10 +1,13 @@
 pipeline {
-    agent any
+    //agent any
     environment {
         a='abc'    
     }
     stages {
         stage('Hello') {
+            agent {
+                node { label 'Build-In Node'}
+            }
             steps {
                 echo 'Hello World'
                 script {
@@ -17,6 +20,9 @@ pipeline {
               }
         }
             stage('test') {
+                 agent {
+                node { label 'hjh'}
+            }
                 steps {
                 input('Do you want to proceed?')
                     echo 'hello'
